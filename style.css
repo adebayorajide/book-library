@@ -1,0 +1,142 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}      
+
+body {
+    background: url("images/Vector\ 2.png");
+    display: flex;
+    flex-direction: column;
+    font-family: serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    padding: 2rem 1.25rem;
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+h2 span {
+    color: #fa7c54;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.info {
+    font-size: 12px;
+    opacity: .5;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 2px 1.5rem;
+    opacity: .8;
+
+}
+
+.input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    width: 320px;
+    padding: 10px;
+}
+
+.input::placeholder {
+    font-size: 0.8rem;
+}
+/* 
+.password {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    width: 1rem;
+    right: 39%;
+    cursor: pointer;
+    color: lightgray;
+} */
+
+.checkbox label {
+    display: inline-block;
+    margin-left: -0.2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: #fa7c54;
+    color: #fff;
+    width: 320px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.user, .check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    opacity: .7;
+}
+
+.user a, .check a {
+    color: #000;
+    text-decoration: none;
+}
+
+.user a:hover, .check a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        background-position-y: center;
+        width: 350px;
+        margin: 0 1rem;
+    }
+
+    label {
+        margin-left: 1rem;
+    }
+
+    .user {
+        padding: 1rem;
+    }
+}
